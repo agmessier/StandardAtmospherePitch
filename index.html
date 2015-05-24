@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Standard Atmosphere Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Standard Atmosphere Calculator">
+  <meta name="author" content="Andy Messier">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Standard Atmosphere Calculator</h1>
+    <h2>You know you want it!</h2>
+    <p>Andy Messier<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Shiny Standard Atmosphere - It&#39;s fast!</h2>
+  </hgroup>
+  <article data-timings="">
+    <ol>
+<li>Exponential functions are a pain</li>
+<li>Who can remember all those formulas?</li>
+<li>Get your answer in the time of a page refresh</li>
+</ol>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>It&#39;s accurate!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Competitor&#39;s page shows the following density ratio at 1000 feet: 0.971064</p>
+
+<p>An R script would show:</p>
+
+<pre><code class="r">sigma=(1-.0065*304.8/288.15)^(9.80665/.0065/(8.31432/0.0289644)-1)
+sigma
+</code></pre>
+
+<pre><code>## [1] 0.9710642
+</code></pre>
+
+<p>That&#39;s one extra digit</p>
+
+<p>But wait, there&#39;s more! Shiny Standard Atmosphere shows 0.97106419598261. Wow!!!</p>
+
+<p>Uses constants from the standard atmosphere definition, so limited only by numerical precision of calculations.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>It&#39;s stylish!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Uses &quot;PageWithSidebarLayout&quot; just like the famed Caffo diabetes predictor</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>It&#39;s convenient!</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Get it anywhere web pages are seen:</p>
+
+<p>Your iPhone, iPad, Android phone/tablet, your friend&#39;s Windows phone, or your laptop...Mac, PC or Linux!</p>
+
+<p>You don&#39;t even need to type (must use exact 1000s of feet to use non-typing feature)</p>
+
+<p>Get your free trial at:</p>
+
+<p><a href="https://agmessier.shinyapps.io/Data_products/">https://agmessier.shinyapps.io/Data_products/</a></p>
+
+<p>Hosted by shinyapps.io</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Shiny Standard Atmosphere - It&#39;s fast!'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='It&#39;s accurate!'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='It&#39;s stylish!'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='It&#39;s convenient!'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
